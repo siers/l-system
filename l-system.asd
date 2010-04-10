@@ -1,3 +1,8 @@
 (asdf:defsystem #:l-system
   :depends-on (#:lispbuilder-sdl)
-  :components ((:file "dragon-curve")))
+  :components
+  ((:module "src"
+      :serial t
+      :components
+        ((:file "dragon-curve")
+        (:file "frontend")))))
